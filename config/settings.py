@@ -113,7 +113,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # 국제화(i18n) 설정
 LANGUAGE_CODE = 'en-us' # 언어 설정
 
-TIME_ZONE = 'UTC'       # 타임존
+TIME_ZONE = 'Asia/Seoul'       # 타임존
 
 USE_I18N = True         # 국제화 사용 여부
 

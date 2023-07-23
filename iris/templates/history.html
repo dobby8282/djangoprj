@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IRIS 예측 히스토리</title>
+</head>
+<body>
+    <h1>IRIS 예측 히스토리</h1>
+    <table>
+        <tr>
+            <th>꽃받침 길이</th>
+            <th>꽃받침 폭</th>
+            <th>꽃잎 길이</th>
+            <th>꽃잎 폭</th>
+            <th>예측된 품종</th>
+            <th>예측 시간</th>
+        </tr>
+        {% for prediction in predictions %}
+        <tr>
+            <td>{{ prediction.sepal_length }}</td>
+            <td>{{ prediction.sepal_width }}</td>
+            <td>{{ prediction.petal_length }}</td>
+            <td>{{ prediction.petal_width }}</td>
+            <td>{{ prediction.species }}</td>
+            <td>{{ prediction.prediction_time }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <a href="/">Home</a>
+
+</body>
+</html>
