@@ -23,3 +23,13 @@ python manage.py startapp iris
 python manage.py runserver
 ```
 
+- 마이그레이션 적용
+```
+python manage.py migrate
+```
+
+- 마이그레이션 변경파일 생성
+```
+python manage.py makemigrations
+```
+

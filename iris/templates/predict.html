@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,5 +12,16 @@
     <p>꽃잎 길이: {{ petal_length }}</p>
     <p>꽃잎 폭: {{ petal_width }}</p>
     <p>예측된 품종: {{ species_prediction }}</p>
+    <p><a href="/">Home</a></p>
+    {% if species_prediction == 'setosa' %}
+        <img src="{% static 'img/setosa.png' %}" alt="Setosa Image">
+    {% elif species_prediction == 'versicolor' %}
+        <img src="{% static 'img/versicolor.png' %}" alt="Versicolor Image">
+    {% elif species_prediction == 'virginica' %}
+        <img src="{% static 'img/virginica.png' %}" alt="Virginica Image">
+    {% else %}
+        <p> No Image Available</p>
+    {% endif %}
+
 </body>
 </html>
