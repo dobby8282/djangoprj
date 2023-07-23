@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'iris',
 ]
 
 MIDDLEWARE = [
@@ -61,7 +62,7 @@ ROOT_URLCONF = 'config.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',   # 템플릿 엔진
-        'DIRS': [],                                                     # 템블릿 디렉토리 설정
+        'DIRS': [],                           # 템플릿 디렉토리 설정
         'APP_DIRS': True,                     # 애플릿케이션 디렉토리에서 템플릿 찾도록 설정
         'OPTIONS': {                          # 템플릿 컨텍스트 프로세서 설정
             'context_processors': [
