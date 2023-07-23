@@ -24,7 +24,7 @@ def predict(request):
             'sepal_width': sepal_width,
             'petal_length': petal_length,
             'petal_width': petal_width,
-            'species_perdiction': species_perdiction
+            'species_prediction': species_perdiction
 
         })
 
